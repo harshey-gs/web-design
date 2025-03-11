@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Form</ha>
+        </div>
+            <div>
+                <form name="formName" onsubmit="return validateForm()">
+                    <div>
+                <lable for="nameID">Name</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="text" id="nameId" name="nameName"required>
+            </div>
+            <div>
+                <lable for="emailID">email</lable>
+                <span class="redcolor">*</span>
+                <span>;</span>
+                <input type="email" id="emailId" name="emailName"required>
+            </div>
+            <div>
+                <lable for="numberID">phone no</lable>
+                <span>*</span>
+                <span>;</span>
+                <input type="number" id="phoneID" name="numberName"required>
+            </div>
+            <div>
+                <span >select gender:</span>
+                <lable for="maleId">male</lable>
+                <input type="radio" id="maleId" name="gender">
+                <lable for="femaleId">female</lable> 
+                <input type="radio" id="femaleId" name="gender"required>
+            </div>
+            <button type="submit" value="submit">submit</button>
+            <button type="reset" value="clear "onclick="resetForm()">clear</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
